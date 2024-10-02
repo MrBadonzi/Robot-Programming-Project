@@ -44,7 +44,7 @@ catkin build
 ```
 To launch the main node use:
 ```sh
-rosecore
+roscore
 ```
 ### Map server
 To launch the Map server node, still inside the project directory, run the following commands:
