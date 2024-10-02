@@ -29,10 +29,11 @@ Clone the repository:
 git clone https://github.com/MrBadonzi/Robot-Programming-Project.git
 ```
 Then build your catkin workspace (-DPYTHON_EXECUTABLE=/usr/bin/python3 argument is needed only if it's the first time the workspace is initialized):
-
+```sh
 cd ..
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 source devel/setup.bash
+```
 
 # How to Run
 you need to open five different terminals insisde the ICP_localization folder. Each of the following points must be executed in a different terminal.  
