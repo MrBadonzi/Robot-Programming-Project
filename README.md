@@ -36,7 +36,7 @@ source devel/setup.bash
 ```
 
 # How to Run
-you need to open five different terminals insisde the ICP_localization folder. Each of the following points must be executed in a different terminal.  
+Each of the following points must be executed in a different terminals, inside the project directory (ICP_localization folder)
 ### Compile and execute the main node
 If you ever need to compile the code use the following command:
 ```sh
@@ -47,7 +47,7 @@ To launch the main node use:
 rosecore
 ```
 ### Map server
-To launch the Map server node, still inside the ICP_localization folder, run the following commands:
+To launch the Map server node, still inside the project directory, run the following commands:
 ```sh
 source /opt/ros/noetic/setup.bash
 rosrun map_server map_server src/Robot-Programming-Project/02_icp_localization/test_data/cappero_map.yaml
