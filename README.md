@@ -56,8 +56,8 @@ rosrun map_server map_server src/Robot-Programming-Project/02_icp_localization/t
  To launch the simulator, go to the project directory, source ros, launch the roscore and launch the `stageros` node
    ```sh
     source /opt/ros/noetic/setup.bash
-    rosrun stage_ros stageros src/Robot-Programming-Project/02_icp_localization/test_data/cappero.world
-    ```
+    rosrun stage_ros stageros src/Robot-Programming-Project/02_icp_localization/test_data/cappero.world   
+```
 ### Localizer 
 To launch the localizer node. 
 ```sh
@@ -71,7 +71,7 @@ You can test your localizer using `RViz`. We have provided a configuration that 
 
 Go to the project directory, source ros and launch rviz with our configuration
 ```sh
-rviz -d src/02_icp_localization/test_data/rviz.rviz
+rviz -d src/Robot-Programming-Project/02_icp_localization/test_data/rviz.rviz
 ```
 
 
