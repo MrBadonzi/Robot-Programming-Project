@@ -3,7 +3,7 @@ The project uses the ICP algorithm to localize the position of the robot inside 
 # Requirements 
 This project requires ROS *Noetic* istalled in your machine. If you havent't istalled yet, you can check the Ros installation documentation (http://wiki.ros.org/ROS/Installation).
 ### Map Server
-- Install the `ros-${DISTRO}-map-server` package.
+Install the `ros-${DISTRO}-map-server` package.
    ```sh
     sudo apt install ros-noetic-map-server
    ```
@@ -21,13 +21,19 @@ cd ros_workspaces
 mkdir ICP_localization
 cd ICP_localization
 mkdir src
+cd src
 catkin_init_workspace
 ```
-then go inside the src directory and clone the repository:
+Clone the repository:
 ```sh
-cd src
 git clone https://github.com/MrBadonzi/Robot-Programming-Project.git
 ```
+Then build your catkin workspace (-DPYTHON_EXECUTABLE=/usr/bin/python3 argument is needed only if it's the first time the workspace is initialized):
+
+cd ..
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+source devel/setup.bash
+
 # How to Run
 you need to open five different terminals insisde the ICP_localization folder. Each of the following points must be executed in a different terminal.  
 ### Compile and execute the main node
