@@ -50,13 +50,13 @@ rosecore
 To launch the Map server node, still inside the ICP_localization folder, run the following commands:
 ```sh
 source /opt/ros/noetic/setup.bash
-rosrun map_server map_server src/02_icp_localization/test_data/cappero_map.yaml
+rosrun map_server map_server src/Robot-Programming-Project/02_icp_localization/test_data/cappero_map.yaml
 ```
 ### Stage-ROS
  To launch the simulator, go to the project directory, source ros, launch the roscore and launch the `stageros` node
    ```sh
     source /opt/ros/noetic/setup.bash
-    rosrun stage_ros stageros src/02_icp_localization/test_data/cappero.world
+    rosrun stage_ros stageros src/Robot-Programming-Project/02_icp_localization/test_data/cappero.world
     ```
 ### Localizer 
 To launch the localizer node. 
