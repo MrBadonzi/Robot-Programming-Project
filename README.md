@@ -8,8 +8,8 @@ This project requires ROS *Noetic* istalled in your machine. If you havent't ist
     sudo apt install ros-noetic-map-server
    ```
 ### Stage-ROS
-- Install the `ros-${DISTRO}-stage-ros` and `ros-${DISTRO}-teleop-twist-keyboard` package.
-  ```sh
+Install the `ros-${DISTRO}-stage-ros` and `ros-${DISTRO}-teleop-twist-keyboard` package.
+```sh
   sudo apt install ros-noetic-stage-ros ros-noetic-teleop-twist-keyboard
   ```
 # Create Workspace
