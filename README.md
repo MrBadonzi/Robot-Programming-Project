@@ -46,8 +46,8 @@ source /opt/ros/noetic/setup.bash
 rosrun map_server map_server src/02_icp_localization/test_data/cappero_map.yaml
 ```
 ### Stage-ROS
-- To launch the simulator, go to the project directory, source ros, launch the roscore and launch the `stageros` node
-  - ```sh
+ To launch the simulator, go to the project directory, source ros, launch the roscore and launch the `stageros` node
+   ```sh
     source /opt/ros/noetic/setup.bash
     rosrun stage_ros stageros src/02_icp_localization/test_data/cappero.world
     ```
