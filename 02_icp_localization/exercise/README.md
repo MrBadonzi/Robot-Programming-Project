@@ -87,28 +87,6 @@ rviz -d test_data/rviz.rviz
 
 
 
-## COME FARE LE COSINE 
-DEVO STARE QUI /catkin_ws/robot_programming
-
-COMPILARE: 
-    catkin build
-ESEGUIRE SERVER PRINCIPALE:  
-    roscore
-
-ESEGUIRE map server: 
-    source /opt/ros/noetic/setup.bash
-    rosrun map_server map_server src/02_icp_localization/test_data/cappero_map.yaml
-
-ESEGUIRE STAGE-ROS:
-  rosrun stage_ros stageros src/02_icp_localization/test_data/cappero.world
-
-ESEGUIRE rviz:
-    rviz -d src/02_icp_localization/test_data/rviz.rviz
-
-ESEGUIRE MAIN: 
-    source devel/setup.bash
-    rosrun icp_localization localizer_node
-
 
 
 
