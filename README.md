@@ -55,6 +55,8 @@ rosrun map_server map_server src/02_icp_localization/test_data/cappero_map.yaml
 To launch the localizer node. 
 ```sh
 source devel/setup.bash
+rosrun icp_localization localizer_node
+```
 
 ### Visualize Results
 
@@ -65,5 +67,4 @@ Go to the project directory, source ros and launch rviz with our configuration
 rviz -d src/02_icp_localization/test_data/rviz.rviz
 ```
 
-rosrun icp_localization localizer_node
-```
+
