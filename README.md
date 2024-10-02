@@ -51,6 +51,11 @@ rosrun map_server map_server src/02_icp_localization/test_data/cappero_map.yaml
     source /opt/ros/noetic/setup.bash
     rosrun stage_ros stageros src/02_icp_localization/test_data/cappero.world
     ```
+### Localizer 
+To launch the localizer node. 
+```sh
+source devel/setup.bash
+
 ### Visualize Results
 
 You can test your localizer using `RViz`. We have provided a configuration that you can directly run after your node has started.
@@ -59,9 +64,6 @@ Go to the project directory, source ros and launch rviz with our configuration
 ```sh
 rviz -d src/02_icp_localization/test_data/rviz.rviz
 ```
-### Localizer 
-To lanch the localizer node. 
-```sh
-source devel/setup.bash
+
 rosrun icp_localization localizer_node
 ```
