@@ -28,7 +28,7 @@ Clone the repository:
 ```sh
 git clone https://github.com/MrBadonzi/Robot-Programming-Project.git
 ```
-Then build your catkin workspace (-DPYTHON_EXECUTABLE=/usr/bin/python3 argument is needed only if it's the first time the workspace is initialized):
+Then build your catkin workspace `(-DPYTHON_EXECUTABLE=/usr/bin/python3`  argument is needed only if it's the first time the workspace is initialized):
 ```sh
 cd ..
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
