@@ -1,7 +1,7 @@
 # Robot-Programming-Project
 This project implements robot localization using the Iterative Closest Point (ICP) algorithm using ROS. The objective of the project is to enable the robot to autonomously determine its position within the environment by comparing its real-time sensor data with a known reference map.
 # Requirements 
-This project requires ROS *Noetic* istalled in your machine. If you haven't istalled yet, you can check the Ros installation documentation (http://wiki.ros.org/ROS/Installation).
+This project requires ROS *Noetic* installed in your machine. If you haven't istalled yet, you can check the Ros installation documentation (http://wiki.ros.org/ROS/Installation).
 ### Map Server
 Install the `ros-${DISTRO}-map-server` package.
    ```sh
