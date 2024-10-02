@@ -38,11 +38,11 @@ source devel/setup.bash
 # How to Run
 you need to open five different terminals insisde the ICP_localization folder. Each of the following points must be executed in a different terminal.  
 ### Compile and execute the main node
-to compile the code use the following command:
+If you ever need to compile the code use the following command:
 ```sh
 catkin build
 ```
-to launch the main node use:
+To launch the main node use:
 ```sh
 rosecore
 ```
