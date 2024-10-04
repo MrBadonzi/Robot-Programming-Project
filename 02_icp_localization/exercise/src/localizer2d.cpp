@@ -159,7 +159,7 @@ void Localizer2D::getPrediction(ContainerType& prediction_) {
     float angle = atan2(diference.y(), diference.x());
 
     if(distance <= _range_max && angle >= _angle_min && angle <= _angle_max){     
-      prediction_.push_back(*pointer);
+      prediction_.push_back(*point);
     }
   }
 
