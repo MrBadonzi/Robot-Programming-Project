@@ -151,11 +151,12 @@ void Localizer2D::getPrediction(ContainerType& prediction_) {
 
   _obst_tree_ptr->fullSearch(neighbors, _laser_in_world.translation(), ball_radius);
   
-  for (auto& pointer : neighbors) {
+  for (auto& point : neighbors) {
     
-    PointType v_diff = _laser_in_world.translation() - *pointer;
-    float distance = v_diff.norm();
-    float angle = atan2(v_diff.y(), v_diff.x());
+    PointType diference = _laser_in_world.translation() - *point;
+
+    float distance = diference.norm();
+    float angle = atan2(diference.y(), diference.x());
 
     if(distance <= _range_max && angle >= _angle_min && angle <= _angle_max){     
       prediction_.push_back(*pointer);
