@@ -31,8 +31,8 @@ void Localizer2D::setMap(std::shared_ptr<Map> map_) {
    // get the grid data
     const std::vector<int8_t>& mapGrid = _map->grid();
 
-    for (auto row=1; row <= Maprows; ++row){
-      for(auto col=1; col <= Mapcols; ++col){
+    for (auto row=0; row < Maprows; row++){
+      for(auto col=0; col < Mapcols; col++){
         
         //take the corresponding cell status in the vector 
         int grid_element = _map->operator()(row,col);
